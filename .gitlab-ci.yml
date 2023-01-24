@@ -8,4 +8,4 @@ build:
     - ./gradlew build
   artifacts:
     paths:
-      - ./builds/libs
+      - ./build/libs
