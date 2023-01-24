@@ -17,3 +17,6 @@ Agora iremos fazer o deploy da apicação no Elastic Beanstalk.
 - Credenciais também foram adicionados como variáveis
 Deploy
 A imagem usada já possui o AWS CLI. Foi definido também que não deve haver nenhum entrypoint. Os comando executados pelo script são para simplesmente copiar o artefact para o bucket criado anteriormente.
+
+O próximo passo é fazer o deploy da aplicação presente no bucket do s3. Para isso seguir 2 passos, o primeiro é criar um novo application-version e depois fazer atualização do ambiente.
+Uma variável para identificar a versão do pipeline foi criada.
