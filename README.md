@@ -4,3 +4,10 @@ Essa aplicação irá expor uma API que permite visualizar ou remover carros de 
 
 BUILDANDO A APLICAÇÃO
 Nessa primeira etapa foi criado um arquivo.gitlab-yml para a criação de uma pipeline. No estágio de build são gerados artefatos. 
+
+SMOKE TEST
+O smoke test é um teste bem simples para testar se algo está funcionando
+Nesse teste iremos chamar um endpoint. Um Curl será usado para ver se a aplicação responde.
+
+Para isso, iremos subir a aplicação através do artefato gerado no stage anterior. Como a aplicação demora um pouco para inicializar foi adicionado um sleep de 30 segundos e então o script executa o curl e verifica se existe o status "UP".
+
