@@ -9,5 +9,4 @@ SMOKE TEST
 O smoke test é um teste bem simples para testar se algo está funcionando
 Nesse teste iremos chamar um endpoint. Um Curl será usado para ver se a aplicação responde.
 
-Para isso, iremos subir a aplicação através do artefato gerado no stage anterior. Como a aplicação demora um pouco para inicializar foi adicionado um sleep de 30 segundos e então o script executa o curl e verifica se existe o status "UP".
-
+Para isso, iremos subir a aplicação através do artefato gerado no stage anterior. Como a aplicação demora um pouco para inicializar foi adicionado um sleep de 30 segundos e então o script executa o curl e verifica se existe o status "UP". 
