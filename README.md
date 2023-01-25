@@ -15,6 +15,8 @@ Agora iremos fazer o deploy da apicação no Elastic Beanstalk.
 - Primeiramente é preciso criar um bucket no S3 para armazenar o artefato gerado no build.
 - O nome do bucket foi adicionado como variável no gitlab
 - Credenciais também foram adicionados como variáveis
+- O ambiente em que ficará hospedado o aplicativo precisa já estar criado para executar esse script.
+
 Deploy
 A imagem usada já possui o AWS CLI. Foi definido também que não deve haver nenhum entrypoint. Os comando executados pelo script são para simplesmente copiar o artefact para o bucket criado anteriormente.
 
