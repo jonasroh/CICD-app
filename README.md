@@ -27,3 +27,6 @@ Nesse novo update do código iremos atualizar informações um endpoint da aplic
 
 Verificando a versão da aplicação depois do deployment
 A verificação será feita através de um curl para o domínio da aplicação. Para obter o domínio é necessário instalar o pacote jq para extrair esse domínio do json gerado no processo de build.
+
+- CODE QUALITY
+Nesse novo update foi criado um novo estágio para a verificar a qualidade do código. O PMD foi a ferramenta utilizada para esse prpósito. O que estamos interessados em obter são os reports gerados por essa ferramenta.

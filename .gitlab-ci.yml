@@ -26,8 +26,19 @@ smoke test:
     - apk --no-cache add curl
   script:
     - java -jar ./build/libs/$ARTIFACT_NAME & 
-    - sleep 30
+    - sleep 20
     - curl http://localhost:5000/actuator/health | grep "UP"
+
+
+code quality:
+  stage: test
+  image: openjdk:12-alpine
+  script:
+    - ./gradlew pmdMain pmdTest
+    artifacts:
+    when: always
+    paths:
+      - build/reports/pmd
 
 deploy:
   stage: deploy
