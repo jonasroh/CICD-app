@@ -30,3 +30,6 @@ A verificação será feita através de um curl para o domínio da aplicação. 
 
 - CODE QUALITY
 Nesse novo update foi criado um novo estágio para a verificar a qualidade do código. O PMD foi a ferramenta utilizada para esse prpósito. O que estamos interessados em obter são os reports gerados por essa ferramenta.
+
+- UNIT TEST
+Unit tests também foram adicionados ao pipeline. Esses testes sgeralmente são escritp pelo próprio desenvolvedor para detectar erros de programação e garantir a qualidade do código. Esse estágio é implementado ao pipeline de forma semelhante ao estágio de code quality.
