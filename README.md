@@ -24,3 +24,6 @@ O próximo passo é fazer o deploy da aplicação presente no bucket do s3. Para
 Uma variável para identificar a versão do pipeline foi criada.
 
 Nesse novo update do código iremos atualizar informações um endpoint da aplicação. Para isso vamos substituir alguns dados com informações geradas durante o processo de build.
+
+Verificando a versão da aplicação depois do deployment
+A verificação será feita através de um curl para o domínio da aplicação. Para obter o domínio é necessário instalar o pacote jq para extrair esse domínio do json gerado no processo de build.
